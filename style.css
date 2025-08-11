@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
@@ -62,7 +63,7 @@ body::before {
     display: inline-block;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0,0,0,1);
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
     font-size: 8vmin;
    color: #b0413e;
    background-color: #ffffc7;
@@ -94,4 +95,48 @@ body::before {
     border: 2px solid #ffffc7;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0,0,0,1);
+    overflow: hidden;
+}
+.winner-container h1{
+  margin-bottom: 1rem;
+}
+@media (max-width: 685px) {
+  .title {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  .game {
+    height: 80vmin;
+    width: 80vmin;
+  }
+  .box {
+    height: 24vmin;
+    width: 24vmin;
+    font-size: 10vmin;
+  }
+  #reset-btn, #new-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+  .game {
+    height: 90vmin;
+    width: 90vmin;
+  }
+  .box {
+    height: 28vmin;
+    width: 28vmin;
+    font-size: 12vmin;
+  }
+  #reset-btn, #new-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
 }
