@@ -43,7 +43,7 @@ boxes.forEach((box) => {
 const gameDraw = () => {
   document.body.style.backgroundColor = '#ffffc7';
 document.body.innerHTML = `<div class="winner-container">
-<h1>Game Draw!</h1>
+<h1>Draw!</h1>
 <button id="new-btn" class="btn">Play Again!</button>
 </div>`;
 document.getElementById("new-btn").addEventListener("click", () => {
@@ -94,4 +94,5 @@ const checkWinner = () => {
 document.getElementById("reset-btn").addEventListener("click", () => {
     location.reload();
 })
+
 
